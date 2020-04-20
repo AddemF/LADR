@@ -45,19 +45,41 @@
 
 %%% END Article customizations
 
-%%% The "real" document content comes below...
+\usepackage{amsmath}
 
-\title{Reddit LADR Study Group \\ Chapter 1}
+%%% The "real" document content comes below...
 
 
 \begin{document}
-\maketitle
+
+\begin{center}
+\LARGE Reddit LADR Study Group \\
+Chapter 1
+\end{center}
 
 {\Large 1.A}
 
-Problem 1.
+{\large Problem 1. }
+
+\begin{align*}
+	\frac{1}{a+bi}\cdot \frac{a-bi}{a-bi} = \frac{a-bi}{a^2+b^2} = \frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i
+\end{align*}
+
+so we take $c= \frac{a}{a^2+b^2}$ and similar for $d$.  Note that $a^2+b^2 = |a+bi|^2$ and it is often helpful to think of complex operations in terms of the modulus.  In effect what we've seen is $1/z = \frac{\overline{z}}{z\overline{z}} = \frac{\overline{z}}{|z|^2}$.
+
+\pagebreak
 
 {\Large 1.B}
 
+{\large Problem 1.}
+
+From the definitions this requires showing that $\vec v$ is the element such that if added to $-\vec v$ the result is $\vec 0$.  But this just follows again from the definition.
+
+\pagebreak
+
 {\Large 1.C}
+
+{\large Problem 1.}
+
+(a) and (d) are subspaces, the others are not.  You can rule out (b) because it does not contain $\vec 0$.  You can rule out (c) by additivity: $\begin{bmatrix} 1\\1\\0\end{bmatrix}, \begin{bmatrix}0\\1\\1\end{bmatrix}$ are each in the set but their sum is not.
 \end{document}
